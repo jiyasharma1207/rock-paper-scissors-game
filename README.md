@@ -70,6 +70,10 @@ The first move is chosen by the player, while the computer selects a random move
 
 ---
 
+# 🎮 Live Demo
+
+👉 https://jiyasharma1207.github.io/rock-paper-scissors-game/
+
 ## 👩‍💻 Author
 
 **Jiya Sharma**
