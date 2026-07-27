@@ -12,11 +12,13 @@ h1{
 }
 
 .choices{
-    display: flex;
+    display:flex;
     justify-content:center;
     align-items:center;
-    gap:3rem;
-    margin-top: 3rem;
+    flex-wrap:wrap;
+    gap:2rem;
+    margin-top:3rem;
+    padding:0 1rem;
 }
 
 .choice{
@@ -34,10 +36,10 @@ h1{
 }
 
 img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+    width:90%;
+    height:90%;
+    object-fit:cover;
+    border-radius:50%;
 }
 
 .score-board{
@@ -58,10 +60,34 @@ img{
 }
 
 #msg{
-    background-color:rgb(2, 2, 40);
+    display:inline-block;
+    max-width:90%;
+    background:rgb(2,2,40);
     color:white;
-    font-size:2rem;
-    display:inline;
-    padding:1rem;
+    font-size:clamp(1rem,2.5vw,2rem);
+    padding:1rem 1.5rem;
     border-radius:1rem;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:1.6rem;
+        height:3.5rem;
+        line-height:3.5rem;
+    }
+
+    .choices{
+        gap:1rem;
+        margin-top:2rem;
+    }
+
+    .score-board{
+        gap:2rem;
+    }
+
+    #msg{
+        width:100%;
+        max-width:350px;
+    }
 }
